@@ -15,7 +15,6 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
 	<link rel="manifest" href="img/favicon/site.webmanifest">
-	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="theme-color" content="#ffffff">
 	<!-- styles -->
@@ -26,6 +25,26 @@
 <body>
 	<!-- wrapper -->
 	<div class="wrapper">
+		<div class="header-top" id="header-top">
+			<div class="container">
+				<div class="header-top__wrapper">
+					<div class="header-top__search">
+						<button class="header-top__search-btn">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-search"></use>
+							</svg>
+						</button>
+						<input type="text" class="header-top__search-input" placeholder="Поиск по сайту">
+					</div>
+					<button class="header-top__vi">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-eye"></use>
+						</svg>
+						<span>Версия для слабовидящих</span>
+					</button>
+				</div>
+			</div>
+		</div>
 		<!-- header -->
 		<header class="header" id="header">
 			<div class="container">
@@ -55,13 +74,133 @@
 						<span class="hamburger__inner"></span>
 						<span class="hamburger__inner"></span>
 					</button>
-					<a href="#" class="header__btn btn">Написать обращение</a>
+					<a href="#" class="header__btn btn btn--blue">Написать обращение</a>
 				</div>
 			</div>
 		</header>
 		<!-- end of header -->
 		<!-- content -->
 		<div class="wrapper__content">
+			<!-- main -->
+			<section class="main" id="main">
+				<div class="container">
+					<div class="main__wrap">
+						<div class="main__left">
+							<div class="main__slider">
+								<div class="swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="main__slide" style="background-image: url(img/main-bg-01.jpg);">
+												<span class="main__help">Главное за месяц</span>
+												<h3 class="main__title">
+													Сергей Цивилев: программа «Социальный
+													контракт» помогла кузбассовцам
+													повысить доход
+												</h3>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="main__slide" style="background-image: url(img/main-bg-02.jpg);">
+												<span class="main__help">Главное за месяц</span>
+												<h3 class="main__title">
+													Сергей Цивилев: программа «Социальный
+													контракт» помогла кузбассовцам
+													повысить доход
+												</h3>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="main__slide" style="background-image: url(img/main-bg-01.jpg);">
+												<span class="main__help">Главное за месяц</span>
+												<h3 class="main__title">
+													Сергей Цивилев: программа «Социальный
+													контракт» помогла кузбассовцам
+													повысить доход
+												</h3>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="main__slide" style="background-image: url(img/main-bg-02.jpg);">
+												<span class="main__help">Главное за месяц</span>
+												<h3 class="main__title">
+													Сергей Цивилев: программа «Социальный
+													контракт» помогла кузбассовцам
+													повысить доход
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+						</div>
+						<div class="main__right">
+							<div class="short-news main__news">
+								<div class="short-news__wrap">
+									<div class="short-news__tabs">
+										<ul class="short-news__list">
+											<li class="short-news__list-item is--active">
+												<button class="short-news__tab">Текущие новости</button>
+											</li>
+											<li class="short-news__list-item">
+												<button class="short-news__tab">Анонсы</button>
+											</li>
+											<li class="short-news__list-item">
+												<button class="short-news__tab">Мероприятия</button>
+											</li>
+										</ul>
+										<div class="short-news__wrapper is--active">
+											<article class="short-news__item">
+												<a href="#" class="short-news__title">Сергей Цивилев и Михаил Мурашко открыли новый лабораторный корпус Кузбасской инфекционной больницы</a>
+												<span class="short-news__help">26 января 2024, 19:13</span>
+											</article>
+											<article class="short-news__item">
+												<a href="#" class="short-news__title">В Анжеро-Судженске новоселами стали 43 семьи льготников</a>
+												<span class="short-news__help">26 января 2024, 19:13</span>
+											</article>
+											<article class="short-news__item">
+												<a href="#" class="short-news__title">Губернатор Сергей Цивилев дал старт Году семьи в Кузбассе</a>
+												<span class="short-news__help">26 января 2024, 19:13</span>
+											</article>
+										</div>
+										<div class="short-news__wrapper">
+											<article class="short-news__item">
+												<a href="#" class="short-news__title">Губернатор Сергей Цивилев дал старт Году семьи в Кузбассе</a>
+												<span class="short-news__help">26 января 2024, 19:13</span>
+											</article>
+											<article class="short-news__item">
+												<a href="#" class="short-news__title">Сергей Цивилев и Михаил Мурашко открыли новый лабораторный корпус Кузбасской инфекционной больницы</a>
+												<span class="short-news__help">26 января 2024, 19:13</span>
+											</article>
+										</div>
+										<div class="short-news__wrapper">
+											<article class="short-news__item">
+												<a href="#" class="short-news__title">Сергей Цивилев и Михаил Мурашко открыли новый лабораторный корпус Кузбасской инфекционной больницы</a>
+												<span class="short-news__help">26 января 2024, 19:13</span>
+											</article>
+											<article class="short-news__item">
+												<a href="#" class="short-news__title">Губернатор Сергей Цивилев дал старт Году семьи в Кузбассе</a>
+												<span class="short-news__help">26 января 2024, 19:13</span>
+											</article>
+											<article class="short-news__item">
+												<a href="#" class="short-news__title">В Анжеро-Судженске новоселами стали 43 семьи льготников</a>
+												<span class="short-news__help">26 января 2024, 19:13</span>
+											</article>
+										</div>
+									</div>
+									<a href="#" class="short-news__link">
+										<span>Все текущие новости</span>
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of main -->
 			<!-- indicators -->
 			<section class="indicators section-indent" id="indicators">
 				<div class="container">
@@ -144,6 +283,173 @@
 				</div>
 			</section>
 			<!-- end of indicators -->
+			<!-- projects -->
+			<section class="projects section-indent" id="projects">
+				<div class="container">
+					<div class="projects__wrap">
+						<div class="projects__left">
+							<div class="section-heading">
+								<div class="section-heading__group">
+									<h2 class="section-heading__title">Проекты</h2>
+								</div>
+							</div>
+							<div class="projects__wrapper">
+								<div class="projects__column">
+									<p class="projects__description">Приказ «О временном ограничении движения транспортных средств по автомобильным дорогам общего пользования регионального или межмуниципального значения Кемеровской...</p>
+									<p class="projects__description">Приказ № 23 от «05» марта 2019 г « Об утверждении порядка создания и работы региональной межведомственной комиссии по обследованию жилых помещений инвалидов и общего...</p>
+									<p class="projects__description">Приказ № 24 от «05» марта 2019 г « Об утверждении Порядка создания и работы муниципальных комиссий по обследованию жилых помещений инвалидов и общего имущества...</p>
+									<p class="projects__description">Приказ № 37 от «15» марта 2019 г « О временном ограничении движения тяжеловесных транспортных средств по автомобильным дорогам общего пользования регионального..</p>
+								</div>
+								<div class="projects__column">
+									<p class="projects__description">Приказ № 38 от «15» марта 2019 г « О временном ограничении движения тяжеловесных транспортных средств по автомобильным дорогам общего пользования регионального...</p>
+									<p class="projects__description">Приказ № 54 от «22» апреля 2019 г « Об утверждении методических рекомендаций по порядку обеспечения качества дорожных работ на территории Кемеровской области...</p>
+									<p class="projects__description">Приказ №99/1 от 01.08.2019г. «О внесении изменений в приказ департамента жилищно-коммунального и дорожного комплекса Кемеровской области от 09.01.2019 № 1 «О конкурсной...</p>
+									<p class="projects__description">Положение о порядке и обеспечении безопасности персональных данных в департаменте жилищно-коммунального и дорожного комплекса Кемеровской ообласти».</p>
+								</div>
+							</div>
+							<a href="#" class="projects__btn btn">
+								<span>Смотреть все проекты</span>
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="projects__right">
+							<a href="#" class="projects__banner">
+								<img src="img/banner.jpg" alt="Image">
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of projects -->
+			<!-- priorities -->
+			<section class="priorities section-indent" id="priorities">
+				<div class="container">
+					<div class="section-heading">
+						<div class="section-heading__group">
+							<h2 class="section-heading__title">Приоритеты министерства</h2>
+						</div>
+					</div>
+					<div class="priorities__slider">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<article class="priorities-card priorities__item">
+										<h3 class="priorities-card__title">Приоритетный проект «обеспечение качества жилищно-коммунальных услуг»</h3>
+										<picture class="priorities-card__img">
+											<img src="img/priorities-01.svg" alt="Image">
+										</picture>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="priorities-card priorities__item">
+										<h3 class="priorities-card__title">Государственная <br>служба</h3>
+										<picture class="priorities-card__img">
+											<img src="img/priorities-02.svg" alt="Image">
+										</picture>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="priorities-card priorities__item">
+										<h3 class="priorities-card__title">Бюджет <br>для граждан</h3>
+										<picture class="priorities-card__img">
+											<img src="img/priorities-03.svg" alt="Image">
+										</picture>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="priorities-card priorities__item">
+										<h3 class="priorities-card__title">Государственная <br>служба</h3>
+										<picture class="priorities-card__img">
+											<img src="img/priorities-02.svg" alt="Image">
+										</picture>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="priorities-card priorities__item">
+										<h3 class="priorities-card__title">Бюджет <br>для граждан</h3>
+										<picture class="priorities-card__img">
+											<img src="img/priorities-03.svg" alt="Image">
+										</picture>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="priorities-card priorities__item">
+										<h3 class="priorities-card__title">Стратегия социально-экономического развития Кемеровской области</h3>
+										<picture class="priorities-card__img">
+											<img src="img/priorities-04.svg" alt="Image">
+										</picture>
+									</article>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of priorities -->
+			<!-- banner wide -->
+			<div class="banner-wide section-indent" id="banner-wide">
+				<div class="container">
+					<a href="#" class="banner-wide__link">
+						<picture class="banner-wide__img">
+							<source srcset="img/banner-hr.jpg" media="(min-width: 768px)">
+							<img src="img/banner-vr.jpg" alt="Image">
+						</picture>
+					</a>
+				</div>
+			</div>
+			<!-- end of banner wide -->
+			<!-- important links -->
+			<section class="important-links section-indent" id="important-links">
+				<div class="container">
+					<div class="section-heading">
+						<div class="section-heading__group">
+							<h2 class="section-heading__title">Важные ссылки</h2>
+						</div>
+					</div>
+					<div class="important-links__wrapper">
+						<a href="#" class="important-links__link">
+							<img src="img/important-links-01.png" alt="Image">
+						</a>
+						<a href="#" class="important-links__link">
+							<img src="img/important-links-02.png" alt="Image">
+						</a>
+						<a href="#" class="important-links__link">
+							<img src="img/important-links-03.png" alt="Image">
+						</a>
+						<a href="#" class="important-links__link">
+							<img src="img/important-links-04.png" alt="Image">
+						</a>
+						<a href="#" class="important-links__link">
+							<img src="img/important-links-05.png" alt="Image">
+						</a>
+						<a href="#" class="important-links__link">
+							<img src="img/important-links-06.png" alt="Image">
+						</a>
+						<a href="#" class="important-links__link">
+							<img src="img/important-links-07.png" alt="Image">
+						</a>
+						<a href="#" class="important-links__link">
+							<img src="img/important-links-08.png" alt="Image">
+						</a>
+						<a href="#" class="important-links__link">
+							<img src="img/important-links-09.png" alt="Image">
+						</a>
+						<a href="#" class="important-links__link">
+							<img src="img/important-links-10.png" alt="Image">
+						</a>
+						<a href="#" class="important-links__link">
+							<img src="img/important-links-11.png" alt="Image">
+						</a>
+						<a href="#" class="important-links__link">
+							<img src="img/important-links-12.png" alt="Image">
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- end of important links -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
